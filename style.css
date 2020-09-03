@@ -1,12 +1,14 @@
 
 
 body {
-    background-color: rgb(25, 25, 25);
+    background-image: url('back.png');
 }
 
 .body-content {
     font-family: 'Roboto', sans-serif;
     color: white;
+    
+    
     animation: fadein 2s;
     padding-bottom: 40px;
     padding-top: 40px;
@@ -97,7 +99,6 @@ li:hover {
     border-radius: 10px;
 }
 .contact {
-    background-color: rgb(15, 15, 15);
     color: white;
     margin: 0;
     padding: 0;
