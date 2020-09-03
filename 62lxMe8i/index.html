@@ -3,7 +3,22 @@
 <head>
 
 </head>
-<body onload="location.replace('https://github.com/luxzi')">
-    
+<body onload="logvisit()">
+
+    <script>
+        var visits;
+        var xhttp = new XMLHttpRequest();
+
+        logvisit = function() {
+            visits += 1;
+            xhttp.open("POST", "https://luxzi.github.io/62lxMe8i/visits.txt", true);
+            xhttp.send(visits.toString());
+
+
+
+            // Redirect Happens Here
+            //location.replace('https://github.com/luxzi');
+        }
+    </script>
 </body>
 </html>
