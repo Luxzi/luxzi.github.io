@@ -95,31 +95,6 @@ body {
     }
 }
 
-.language-list ul {
-    list-style: none;
-    display: inline-flex;
-}
-
-.language-list a {
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.language-list li {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-    .language-list ul {
-        display: block;
-    }
-}
-
-.language-list a {
-    color: white;
-}
-
 @keyframes icon-stagger {
     from {
         opacity: 0%;
@@ -139,14 +114,15 @@ body {
     transition: 0.2s;
     margin: 0;
     border-radius: 1rem;
-    border: rgb(15, 23, 44) 1px solid;
+    border: rgb(28, 35, 53) 1px solid;
+    height: 35vh;
 }
 
 .project-card:hover {
     transition: 0.4s;
     transform: scale(105%);
-    z-index: 999;
     cursor: pointer;
+    z-index: 999;
     filter: drop-shadow(0px 0px 8px black);
 }
 
@@ -167,8 +143,8 @@ body {
 }
 
 .project-image {
-    height: 10vh;
-    background-image: url('https://camo.githubusercontent.com/73fa73eda3ea4431e78d7bb2161ecc3a59279edbfcc032086eb7d10d5bb23a91/68747470733a2f2f692e696d6775722e636f6d2f3867363661504c2e706e67');
+    height: 20vh;
+    /*background-image: url('https://camo.githubusercontent.com/73fa73eda3ea4431e78d7bb2161ecc3a59279edbfcc032086eb7d10d5bb23a91/68747470733a2f2f692e696d6775722e636f6d2f3867363661504c2e706e67');*/
     background-repeat: no-repeat;
     background-position-y: top;
     background-size: cover;
@@ -185,7 +161,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0.2vw;
     row-gap: 1vh;
-    margin-top: 1vh;
 }
 
 .role-design {
@@ -215,9 +190,9 @@ body {
 .section {
     background: #090B11;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     margin-bottom: 8px;
-    border: rgb(15, 23, 44) 1px solid;
+    border: rgb(28, 35, 53) 1px solid;
 }
 
 @media only screen and (max-width: 750px) {
