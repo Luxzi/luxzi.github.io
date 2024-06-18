@@ -3,99 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxzi's Web-bio</title>
-    <script src="htmx.min.js"></script>
-    <link href="index.css" type="text/css" rel="stylesheet"/>
-    <link rel="shortcut icon" type="image/x-icon" href="profile_image.png" />
+    <title>Luxzi's Links</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <div class="content-container">
-        <div class="identity-container">
-            <ul class="ident-line">
-                <img src="profile_image.png" width="125px" height="125px" class="profile-image" alt="A picture of me!"/>
-                <div class="name-and-socials">
-                    <h1 class="name">luxzi <span style="font-size: 10pt">(they/them)</span></h1>
-                    <ul class="social-links">
-                        <li><a href="https://github.com/luxzi"><img src="icons/github-alt.svg" width="25px" height="25px" style="filter:invert(); --i: 0" alt="GitHub"/></a></li>
-                        <li><a href="https://gitlab.com/luxzi"><img src="icons/gitlab.svg" width="25px" height="25px" style="filter:invert(); --i: 2"/></a></li>
-                        <li><a href="https://furry.engineer/@luxzi"><img src="icons/mastodon.svg" width="25px" height="25px" style="filter:invert(); --i: 3"/></a></li>
-                        <li><a href="mailto:luxzi@pm.me"><img src="icons/envelope-solid.svg" width="25px" height="25px" style="filter:invert(); --i: 1" alt="Email"/></a></li>
-                    </ul>
-                </div>
+   <div class="content-container">
+        <div class="identity-banner">
+            <ul>
+                <li>
+                    <div class="identity-banner-image">
+                        <img src="profile-image.png" alt="It's me!"/>
+                    </div>
+                </li>
+                <li>
+                    <div class="identity-banner-information">
+                        <h1 style="margin-bottom: -10px; font-size: 24pt; font-weight: bolder;">luxzi</h1>
+                        <p style="font-size: 13pt; font-weight: 200;">they/them</p>
+                        <h2 style="font-size: 17pt; margin-bottom: 10px; font-weight: 600; line-height: 1.2; margin-top: 5px">Software engineer, university<br/>student, and professional gay furry.</h2>
+                        <ul>
+                            <li>
+                                <a href="https://en.pronouns.page/dictionary/terminology#pansexual"><img src="https://en.pronouns.page/flags/Pansexual.png" alt="Pansexuality pride flag" width="55vh"/></a>
+                                <a href="https://en.pronouns.page/dictionary/terminology#nonbinary"><img src="https://en.pronouns.page/flags/Nonbinary.png" alt="Non-binary pride flag" width="55vh"/></a>
+                                <a href="https://en.pronouns.page/dictionary/terminology#genderfluid"><img src="https://en.pronouns.page/flags/Genderfluid.png" alt="Genderfluid pride flag" width="55vh"/></a>
+                                <a href="https://en.pronouns.page/@Luxzi"><img src="/icons/pronounspage.svg" alt="Pronouns.page flag and link" width="50vh"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-            <ul class="role-design">
-                <li><h1>SOFTWARE ENGINEERING</h1></li>
-                <li><h1>UNIX SYSTEMS</h1></li>
-                <li><h1>DEVOPS</h1></li>
-            </ul>
         </div>
-    </div>
-    <div class="content-body">
-        <div class="section">
-            
-            <h1 style="font-size: 3.2vh;">Hey! my name is Luxzi</h1><br/>
-            <h2>Areas of interest</h2><br/>
-            
-            🥽 VR<br/>
-            ⚙️ Systems Languages<br/>
-            🛠️ CLI Tools<br/>
-            🧰 Services<br/>
-            📥 Containerization<br/>
-            📦 Package Managers<br/>
-            🐧 Linux<br/>
-            🔺 Computer Graphics<br/><br/>
+        <h1 style="padding: 1rem; padding-left: 2rem; font-weight: bolder; font-size: 20pt;">Contact & Code</h1>
+        <div class="links">
+            <a href="mailto:luxzi@pm.me" style="text-decoration: none;"><div class="extern-link">
+                <img src="icons/mail.svg" style="float: left; margin-left: 10px; margin-right: 10px;" class="link-icon"/>
+                Mail
+                <img src="icons/external.svg" style="float: right; margin-right: 10px"/>
+            </div></a>
 
-            <h2>Who am I?</h2><br/>
-            My name is Luxzi or Lux for short. I've been writing software for about 8 years (since 2016). My projects consist of low level systems software, game modding, utilites, and many other things. You will find some of my best work below.
+            <a href="https://github.com/luxzi" style="text-decoration: none;"><div class="extern-link">
+                <img src="icons/github.svg" style="float: left; margin-left: 10px; margin-right: 10px;" class="link-icon"/>
+                GitHub
+                <img src="icons/external.svg" style="float: right; margin-right: 10px"/>
+            </div></a>
 
+            <a href="https://bsky.app/profile/luxzi.bsky.social" style="text-decoration: none;"><div class="extern-link">
+                <img src="icons/bluesky.svg" style="float: left; margin-left: 10px; margin-right: 10px;" class="link-icon"/>
+                Bluesky
+                <img src="icons/external.svg" style="float: right; margin-right: 10px"/>
+            </div></a>
+
+            <a href="https://furry.engineer/@luxzi" style="text-decoration: none;"><div class="extern-link" style="margin-bottom: 0;">
+                <img src="icons/mastodon.svg" style="float: left; margin-left: 10px; margin-right: 10px;" class="link-icon"/>
+                Mastodon
+                <img src="icons/external.svg" style="float: right; margin-right: 10px"/>
+            </div></a>
         </div>
-        <div class="section" style="padding: 15px;">
-        <div class="project-grid">
-            <div class="project-card" onclick='window.open("https://github.com/Luxzi/knewsnotifd")'>
-                <div class="project-image" style="background-image: url('https://camo.githubusercontent.com/73fa73eda3ea4431e78d7bb2161ecc3a59279edbfcc032086eb7d10d5bb23a91/68747470733a2f2f692e696d6775722e636f6d2f3867363661504c2e706e67')"></div>
-                <div class="project-details">
-                    <h1>knewsnotifd</h1>
-                    Kernel news RSS notifier daemon for Discord webhooks
-                </div>
-            </div>
-
-            <div class="project-card">
-                <!--<div class="project-image"></div>-->
-                <div class="project-details">
-                    <h1>No pinned project</h1>
-                    There are not enough projects to pin, so this card is a placeholder.
-                </div>
-            </div>
-
-            <div class="project-card">
-                <!--<div class="project-image"></div>-->
-                <div class="project-details">
-                    <h1>No pinned project</h1>
-                    There are not enough projects to pin, so this card is a placeholder.
-                </div>
-            </div>
-
-            <div class="project-card">
-                <!--<div class="project-image"></div>-->
-                <div class="project-details">
-                    <h1>No pinned project</h1>
-                    There are not enough projects to pin, so this card is a placeholder.
-                </div>
-            </div>
-
-            <div class="project-card" onclick='window.open("https://github.com/Luxzi?tab=repositories")'>
-                <!--<div class="project-image"></div>-->
-                <div class="project-details">
-                    <h1>View all...</h1>
-                    You will be redirected to GitHub.
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section" style="float: bottom; bottom: 0;">
-        <center>© Copyright 2024 Luxzi - Available under a GPLv3 via GitHub</center>
-    </div>
-</div>
-</div>
+        <center><p style="opacity: 40%; font-weight: 200; margin-top: 20px; margin-bottom: 20px;">© 2024 Luxzi, Some rights reserved</p></center>
+   </div>
 </body>
 </html>

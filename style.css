@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 200;
+    font-display: swap;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-light-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 600;
+    font-display: swap;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: bold;
+    font-display: swap;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: bolder;
+    font-display: swap;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-heavy-webfont.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "San Francisco", sans-serif;
+}
+
+body {
+    background: #26132F;
+    line-height: 1.5;
+}
+
+.content-container {
+    background: #2C183D;
+    width: fit-content;
+    border-radius: 40px;
+    filter: drop-shadow(0px 0px 2px black);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 15vh;
+}
+
+.identity-banner {
+    background: #6D3C97;
+    text-wrap: pretty;
+    border-radius: 40px;
+    filter: drop-shadow(0px 2px 2px black);
+}
+
+.identity-banner-information {
+    padding: 1rem;
+    padding-right: 2rem;
+    max-width: fit-content;
+}
+
+.identity-banner-information li img {
+    border-radius: 5px;
+    margin-right: 3px;
+    filter: drop-shadow(0px 1px 0.5px black);
+}
+
+.identity-banner-image img {
+    border-radius: 40px;
+    filter: drop-shadow(2px 0px 2px black);
+}
+
+.identity-banner-image {
+    display: flex;
+    width: 210px;
+    height: 210px;
+    transition: 0.4s ease;
+}
+
+@media only screen and (max-width: 800px) {
+    .identity-banner-image {
+        width: 0;
+        height: 0;
+    }
+}
+
+.extern-link {
+    background: #6D3C97;
+    border: none;
+    border-radius: 40px;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 16pt;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.extern-link:hover {
+    background: black;
+    filter: invert();
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
